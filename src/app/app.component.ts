@@ -1,5 +1,17 @@
 import { Component } from '@angular/core';
 
+const refCombinationData = [
+  { country: 'Andorra', BG: 'Market Unit', Org: 'Technology' },
+  { country: 'India', BG: 'Global', Org: 'Technology' },
+  { country: 'India', BG: 'Global', Org: 'Corporate Functions' },
+  { country: 'India', BG: 'Market Unit', Org: 'Sales' },
+  { country: 'India', BG: 'Market Unit', Org: 'Technology' },
+  { country: 'India', BG: 'Market Unit', Org: 'Operations' },
+  { country: 'India', BG: 'Market Wide', Org: 'Technology' },
+  { country: 'India', BG: 'Market Wide', Org: 'Sales' },
+  { country: 'India', BG: 'Market Wide', Org: 'Strategy & Consulting' },
+];
+
 const refData = {
   India: {
     Global: ['Corporate Functions', 'Operations', 'Technology'],
@@ -15,12 +27,6 @@ const refData = {
     'Market Unit': ['Sales', 'Operations', 'Technology'],
     'Market Wide': ['Strategy & Consulting'],
   },
-  // 'United Kingdom': {
-  //   London: ['Stratford', 'Cannon street', 'London Bridge'],
-  //   Liverpool: ['City Centre', 'L4 Anfield', 'Everton'],
-  //   Oxford: undefined,
-  // },
-  //Australia: undefined,
 };
 
 const columnRelationships = ['country', 'BG', 'Org'];
