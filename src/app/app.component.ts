@@ -5,6 +5,7 @@ const refData = {
     Global: ['Corporate Functions', 'Operations', 'Technology'],
     'Market Unit': ['Sales', 'Operations', 'Technology'],
     'Market Wide': ['Strategy & Consulting'],
+    '': ['Sales', 'CF'],
   },
   Andorra: {
     'Market Unit': ['Technology'],
@@ -73,6 +74,7 @@ export class AppComponent {
 function getRefData(params) {
   const { field } = params.colDef;
   const { data } = params;
+  alert(field);
 
   let currentNode = refData;
 
